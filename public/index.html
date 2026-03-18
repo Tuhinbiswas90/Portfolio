@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Tuhin Biswas — Frontend & MERN Stack Developer from Kolkata, India. CSE Final Year, React.js, Node.js, AI Integration."/>
+  <meta name="keywords" content="Tuhin Biswas, Frontend Developer, React Developer, MERN Stack, Kolkata, Portfolio"/>
+  <title>Tuhin Biswas — Frontend & MERN Developer</title>
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+<!-- ─── CURSOR ─── -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- ─── CANVAS ─── -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ─── LOADING SCREEN ─── -->
+<div id="loader">
+  <div class="loader-logo">TB<span>.</span></div>
+  <div class="loader-bar-wrap">
+    <div class="loader-bar" id="loader-bar"></div>
+  </div>
+  <div class="loader-text" id="loader-text">INITIALIZING...</div>
+  <div class="loader-pct" id="loader-pct">0%</div>
+</div>
+
+<!-- ─── NAV ─── -->
+<nav id="main-nav">
+  <div class="nav-logo">TB<span>.</span>DEV</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certs">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="visitor-badge">👁 <span id="visitor-count">...</span> VISITORS</div>
+    <div class="nav-status"><span class="status-dot"></span>Available for hire</div>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-eyebrow">&gt; PORTFOLIO.INIT() — TUHIN BISWAS // KOLKATA, INDIA</div>
+  <h1 class="hero-name">
+    FRONTEND<br>
+    <span class="accent">DEVELOPER</span>
+  </h1>
+  <p class="hero-role">
+    &gt;&nbsp;<span class="typed-text" id="typed-text"></span><span class="type-cursor"></span>
+  </p>
+  <p class="hero-desc">
+    Final-year CSE undergrad building AI-powered web apps, IoT systems, and real-world MERN stack products. Hackathon Runner-Up. 4× HackerRank Certified. I don't just learn tech — I ship it.
+  </p>
+  <div class="hero-btns">
+    <a href="#projects" class="btn btn-primary">View My Work</a>
+    <button class="btn btn-secondary" id="resume-btn">⬇ Download Resume</button>
+    <a href="#contact" class="btn btn-outline">Hire Me</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">7.9</div><div class="stat-label">CGPA</div></div>
+    <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Live Projects</div></div>
+    <div class="stat"><div class="stat-num">4×</div><div class="stat-label">HackerRank Certs</div></div>
+    <div class="stat"><div class="stat-num">🏆</div><div class="stat-label">Hackathon Win</div></div>
+  </div>
+  <div class="hero-scroll">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="section-header reveal">
+    <div class="section-tag">// 01. ABOUT_ME</div>
+    <h2 class="section-title">Who Am <span class="dim">I?</span></h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm <strong>Tuhin Biswas</strong> — a final-year Computer Science student at Sister Nivedita University, Kolkata. I specialize in full-stack MERN development with a strong focus on frontend engineering and AI integration.</p>
+      <p>I've built a voice-enabled <strong>AI assistant using Google Gemini AI</strong>, an <strong>IoT-based robotic tourist guide system</strong>, and a <strong>mental health platform</strong> that won Runner-Up at eXathon, eXabyte '25 — St. Xavier's College, Kolkata.</p>
+      <p>I also completed a 3-month internship in Digital Clinical Data Management, bringing real industry experience to my profile before graduation.</p>
+      <div class="about-highlight">
+        "I believe the best code is code that ships — clean, scalable, and solves real problems."
+      </div>
+      <p>Currently seeking <strong>Frontend</strong> or <strong>Full-Stack MERN</strong> roles where I can contribute from day one. Open to on-site, hybrid, and remote opportunities.</p>
+      <div style="display:flex; gap:1rem; margin-top:2rem; flex-wrap:wrap;">
+        <a href="https://github.com/Tuhinbiswas90" target="_blank" class="btn btn-secondary">🐙 GitHub</a>
+        <a href="https://linkedin.com/in/tuhin-biswas-453991236" target="_blank" class="btn btn-outline">🔗 LinkedIn</a>
+      </div>
+    </div>
+    <div class="about-card reveal reveal-delay-2">
+      <div class="about-card-title">// QUICK_INFO</div>
+      <div class="info-row"><span class="info-label">LOCATION</span><span class="info-value">Kolkata, India</span></div>
+      <div class="info-row"><span class="info-label">DEGREE</span><span class="info-value">B.Tech CSE</span></div>
+      <div class="info-row"><span class="info-label">UNIVERSITY</span><span class="info-value">Sister Nivedita Univ.</span></div>
+      <div class="info-row"><span class="info-label">CGPA</span><span class="info-value green">7.90 / 10</span></div>
+      <div class="info-row"><span class="info-label">GRAD YEAR</span><span class="info-value">Jun 2026</span></div>
+      <div class="info-row"><span class="info-label">STATUS</span><span class="info-value green">✦ Open to Work</span></div>
+      <div class="info-row"><span class="info-label">FOCUS</span><span class="info-value gold">Frontend + MERN</span></div>
+      <div class="info-row"><span class="info-label">EMAIL</span><span class="info-value" style="font-size:0.78rem">biswastuhin084@gmail.com</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─── -->
+<section id="skills">
+  <div class="section-header reveal">
+    <div class="section-tag">// 02. TECH_STACK</div>
+    <h2 class="section-title">My <span class="dim">Arsenal</span></h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">⚡</div>
+      <div class="skill-card-title">Frontend</div>
+      <div class="tags"><span class="tag tag-teal">React.js</span><span class="tag tag-teal">HTML5</span><span class="tag tag-teal">CSS3</span><span class="tag tag-teal">Tailwind CSS</span><span class="tag tag-teal">Responsive Design</span><span class="tag tag-teal">Component Architecture</span></div>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-card-icon">🛠</div>
+      <div class="skill-card-title">Backend</div>
+      <div class="tags"><span class="tag tag-gold">Node.js</span><span class="tag tag-gold">Express.js</span><span class="tag tag-gold">REST APIs</span><span class="tag tag-gold">JWT Auth</span><span class="tag tag-gold">Middleware</span></div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-card-icon">🗄</div>
+      <div class="skill-card-title">Databases</div>
+      <div class="tags"><span class="tag tag-teal">MongoDB</span><span class="tag tag-teal">SQL</span><span class="tag tag-teal">Cloudinary</span><span class="tag tag-teal">Mongoose</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-card-icon">💻</div>
+      <div class="skill-card-title">Languages</div>
+      <div class="tags"><span class="tag tag-red">JavaScript ES6+</span><span class="tag tag-red">Java</span><span class="tag tag-red">C</span></div>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-card-icon">🤖</div>
+      <div class="skill-card-title">AI / IoT</div>
+      <div class="tags"><span class="tag tag-gold">Gemini AI API</span><span class="tag tag-gold">NLP Integration</span><span class="tag tag-teal">ESP32</span><span class="tag tag-teal">IoT Architecture</span><span class="tag tag-teal">Sensors</span></div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-card-icon">🚀</div>
+      <div class="skill-card-title">Tools & Platforms</div>
+      <div class="tags"><span class="tag tag-teal">Git</span><span class="tag tag-teal">GitHub</span><span class="tag tag-gold">Render</span><span class="tag tag-gold">VS Code</span><span class="tag tag-teal">Postman</span><span class="tag tag-red">DSA</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ─── -->
+<section id="projects">
+  <div class="section-header reveal">
+    <div class="section-tag">// 03. PROJECTS</div>
+    <h2 class="section-title">Things I've <span class="dim">Built</span></h2>
+  </div>
+  <div class="projects-grid">
+
+    <!-- Featured Project -->
+    <div class="project-card featured reveal">
+      <div>
+        <div class="project-badge">🏆 RUNNER-UP — EXATHON 2025</div>
+        <div class="project-num">PROJECT_01.EXE</div>
+        <h3 class="project-title">Mental Health Platform</h3>
+        <div class="project-tech">REACT · NODE · MONGODB · SOCKET.IO · SMS API</div>
+        <p class="project-desc">Built during eXabyte '25 at St. Xavier's College, Kolkata. A full-stack mental health web app featuring an AI-powered emotional state assessment test, real-time peer chat support, automated SMS alert service, and a personal emotion tracker dashboard. Won Runner-Up in a 2-day inter-college hackathon.</p>
+        <div class="tags" style="margin-bottom:1.3rem">
+          <span class="tag tag-teal">React.js</span><span class="tag tag-gold">Node.js</span><span class="tag tag-gold">MongoDB</span><span class="tag tag-teal">Socket.io</span><span class="tag tag-red">SMS API</span><span class="tag tag-red">Real-time</span>
+        </div>
+        <div class="project-links">
+          <a href="https://lnkd.in/dhvx8AiZ" class="project-link" target="_blank">→ GITHUB REPO</a>
+        </div>
+      </div>
+      <div class="win-card">
+        <div class="win-trophy">🏆</div>
+        <div class="win-title">2nd Place</div>
+        <div class="win-sub">eXathon</div>
+        <div class="win-sub">eXabyte '25</div>
+        <div class="win-sub">St. Xavier's College</div>
+        <div class="win-sub">Kolkata • Feb 2025</div>
+      </div>
+    </div>
+
+    <!-- AI Assistant -->
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT_02.EXE</div>
+      <h3 class="project-title">AI Virtual Assistant</h3>
+      <div class="project-tech">MERN + GEMINI AI + VOICE</div>
+      <p class="project-desc">A voice-enabled full-stack AI assistant powered by Google Gemini AI API. Features real-time NLP-based conversational responses, JWT authentication with protected routes, Cloudinary cloud storage, and deployed publicly on Render.</p>
+      <div class="tags" style="margin-bottom:1.3rem">
+        <span class="tag tag-teal">React.js</span><span class="tag tag-gold">Node.js</span><span class="tag tag-gold">Express.js</span><span class="tag tag-gold">MongoDB</span><span class="tag tag-red">Gemini AI</span><span class="tag tag-teal">JWT</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Tuhinbiswas90" class="project-link" target="_blank">→ GITHUB</a>
+        <a href="#" class="project-link">→ LIVE DEMO</a>
+      </div>
+    </div>
+
+    <!-- Robotic Guide -->
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-num">PROJECT_03.EXE</div>
+      <h3 class="project-title">Smart Robotic Tourist Guide</h3>
+      <div class="project-tech">IOT + WEB APP + ESP32</div>
+      <p class="project-desc">A QR-based rental platform for autonomous robotic tour guides with real-time booking, navigation, and interaction. Integrates ESP32 microcontroller with ultrasonic sensors and servo motors via IoT architecture.</p>
+      <div class="tags" style="margin-bottom:1.3rem">
+        <span class="tag tag-teal">React.js</span><span class="tag tag-gold">Node.js</span><span class="tag tag-gold">MongoDB</span><span class="tag tag-red">ESP32</span><span class="tag tag-red">IoT</span><span class="tag tag-teal">QR System</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Tuhinbiswas90" class="project-link" target="_blank">→ GITHUB</a>
+      </div>
+    </div>
+
+
+    <div class="project-card reveal">
+      <div class="project-num">PROJECT_04.EXE</div>
+      <h3 class="project-title">Amazon.com Clone</h3>
+      <div class="project-tech">HTML + CSS + RESPONSIVE DESIGN</div>
+      <p class="project-desc">A pixel-perfect Amazon.com clone built from scratch using HTML and CSS. Replicates the full UI including navigation, product cards, responsive layout and animations — demonstrating strong frontend fundamentals.</p>
+      <div class="tags" style="margin-bottom:1.3rem">
+        <span class="tag tag-teal">HTML5</span><span class="tag tag-teal">CSS3</span><span class="tag tag-gold">Responsive Design</span><span class="tag tag-gold">UI/UX</span>
+      </div>
+      <div class="project-links">
+        <a href="https://lnkd.in/gQPN2xbr" class="project-link" target="_blank">→ LIVE DEMO</a>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-num">PROJECT_05.EXE</div>
+      <h3 class="project-title">StudySync Website</h3>
+      <div class="project-tech">HTML + CSS + RESPONSIVE</div>
+      <p class="project-desc">A fully responsive StudySync website built using HTML and CSS with clean layout, modern design, and mobile-first approach. One of my early web projects showcasing core frontend skills.</p>
+      <div class="tags" style="margin-bottom:1.3rem">
+        <span class="tag tag-teal">HTML5</span><span class="tag tag-teal">CSS3</span><span class="tag tag-gold">Responsive Design</span>
+      </div>
+      <div class="project-links">
+        <a href="https://lnkd.in/gj-fAS3f" class="project-link" target="_blank">→ LIVE DEMO</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CERTIFICATIONS ─── -->
+<section id="certs">
+  <div class="section-header reveal">
+    <div class="section-tag">// 04. ACHIEVEMENTS</div>
+    <h2 class="section-title">Certs & <span class="dim">Wins</span></h2>
+  </div>
+  <div class="certs-grid">
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">⚛️</div>
+      <div>
+        <div class="cert-name">Frontend Developer (React)</div>
+        <div class="cert-org">HackerRank • March 2026</div>
+        <p class="cert-desc">Verified proficiency in React.js, JavaScript ES6+, HTML5, CSS3 — hooks, state management, component lifecycle, and responsive UI design.</p>
+        <a href="https://www.hackerrank.com/certificates/9749889038C9" class="cert-link" target="_blank">→ VIEW CREDENTIAL: 9749889038C9</a>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-1">
+      <div class="cert-icon">⚡</div>
+      <div>
+        <div class="cert-name">JavaScript (Intermediate)</div>
+        <div class="cert-org">HackerRank • March 2026</div>
+        <p class="cert-desc">Certified in closures, async/await, ES6+ features, Data Structures, Algorithms, and Problem Solving patterns.</p>
+        <a href="https://www.hackerrank.com/certificates/254d62ba8f0d" class="cert-link" target="_blank">→ VIEW CREDENTIAL: 254D62BA8F0D</a>
+      </div>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">💼</div>
+      <div>
+        <div class="cert-name">Software Engineer Intern</div>
+        <div class="cert-org">HackerRank • March 2026</div>
+        <p class="cert-desc">Passed HackerRank's role certification covering Problem Solving and SQL — validates software engineering fundamentals.</p>
+        <a href="https://www.hackerrank.com/certificates/1904fb6af73c" class="cert-link" target="_blank">→ VIEW CREDENTIAL: 1904FB6AF73C</a>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-1">
+      <div class="cert-icon">🌐</div>
+      <div>
+        <div class="cert-name">Rest API (Intermediate)</div>
+        <div class="cert-org">HackerRank • March 2026</div>
+        <p class="cert-desc">Certified in REST API consumption — fetching data, using parameters, pagination and API integration patterns.</p>
+        <a href="https://www.hackerrank.com/certificates/1a81700174c3" class="cert-link" target="_blank">→ VIEW CREDENTIAL: 1A81700174C3</a>
+      </div>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">🏆</div>
+      <div>
+        <div class="cert-name">Certificate of Excellence — 2nd Place</div>
+        <div class="cert-org">eXathon, eXabyte '25 • Feb 2025</div>
+        <p class="cert-desc">Runner-Up at St. Xavier's College (Autonomous) Annual Technological Festival — Mental Health Track. PG & Research Dept. of Computer Science.</p>
+        <div class="cert-meta">INTER-COLLEGE HACKATHON • KOLKATA</div>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-1">
+      <div class="cert-icon">🎯</div>
+      <div>
+        <div class="cert-name">Adobe India Hackathon</div>
+        <div class="cert-org">Adobe • National Level</div>
+        <p class="cert-desc">Cleared Round 1 Online MCQ Assessment & Coding Round in Adobe's national-level hackathon, competing among thousands of students.</p>
+        <div class="cert-meta">CERTIFICATE OF PARTICIPATION</div>
+      </div>
+    </div>
+
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">🌍</div>
+      <div>
+        <div class="cert-name">Certificate of Excellence — Web3 & Open Source</div>
+        <div class="cert-org">Eduhub Community (MSME) • 2024</div>
+        <p class="cert-desc">Awarded for active involvement in "Unleash The Power of Web3 & Open Source" event organized by Eduhub Community in partnership with NORDEK, Endless Domains, fastn, Rise In, and Quine.</p>
+        <div class="cert-meta">EDUHUB COMMUNITY • MSME CERTIFIED</div>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-1">
+      <div class="cert-icon">💻</div>
+      <div>
+        <div class="cert-name">C for Beginners</div>
+        <div class="cert-org">Cursa • Feb 2023 | ID: c632-2113787</div>
+        <p class="cert-desc">Completed 11-hour C programming course covering fundamentals, data types, loops, functions and problem-solving in C.</p>
+        <a href="https://cursa.app/en/my-certificate" class="cert-link" target="_blank">→ VERIFY: c632-2113787</a>
+      </div>
+    </div>
+
+    <div class="cert-card reveal">
+      <div class="cert-icon">🎨</div>
+      <div>
+        <div class="cert-name">30 Days to Learn HTML & CSS</div>
+        <div class="cert-org">Cursa (Envato TutsPlus) • Feb 2023 | ID: c745-2113787</div>
+        <p class="cert-desc">Completed HTML & CSS course by Envato TutsPlus — the foundation that started my web development journey.</p>
+        <a href="https://cursa.app/en/my-certificate" class="cert-link" target="_blank">→ VERIFY: c745-2113787</a>
+      </div>
+    </div>
+
+    <div class="cert-card reveal reveal-delay-1">
+      <div class="cert-icon">🪟</div>
+      <div>
+        <div class="cert-name">Microsoft Student Summit</div>
+        <div class="cert-org">Microsoft • Student Summit Watch Party</div>
+        <p class="cert-desc">Participated in the Microsoft Student Summit Watch Party — gaining insights into Microsoft technologies, cloud computing, and student developer programs.</p>
+        <div class="cert-meta">CERTIFICATE OF PARTICIPATION</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="section-header reveal">
+    <div class="section-tag">// 05. CONTACT</div>
+    <h2 class="section-title">Let's <span class="dim">Connect</span></h2>
+  </div>
+  <div class="contact-wrapper reveal">
+    <div>
+      <h2 class="contact-heading">Open to <span>Opportunities</span></h2>
+      <p class="contact-subtext">I'm actively looking for Frontend and Full-Stack MERN roles. Whether it's a startup, product company, or remote opportunity — I'm ready to contribute from day one. Let's build something great together.</p>
+      <div class="contact-info-list">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">✉</div>
+          <a href="mailto:biswastuhin084@gmail.com">biswastuhin084@gmail.com</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🔗</div>
+          <a href="https://linkedin.com/in/tuhin-biswas-453991236" target="_blank">linkedin.com/in/tuhin-biswas</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🐙</div>
+          <a href="https://github.com/Tuhinbiswas90" target="_blank">github.com/Tuhinbiswas90</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <span>Kolkata, West Bengal, India</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Your Name *</label>
+          <input type="text" id="f-name" class="form-input" placeholder="John Doe" required/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email *</label>
+          <input type="email" id="f-email" class="form-input" placeholder="you@company.com" required/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Subject</label>
+        <input type="text" id="f-subject" class="form-input" placeholder="Job Opportunity / Collaboration"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message *</label>
+        <textarea id="f-message" class="form-textarea" rows="5" placeholder="Hi Tuhin, I'd like to discuss..." required></textarea>
+      </div>
+      <div id="form-msg" class="form-msg"></div>
+      <button type="submit" class="btn btn-primary form-submit form-submit-btn" style="width:100%;justify-content:center;">
+        SEND MESSAGE →
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  DESIGNED & BUILT BY <span>TUHIN BISWAS</span> &nbsp;•&nbsp; 2026 &nbsp;•&nbsp; KOLKATA, INDIA
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
